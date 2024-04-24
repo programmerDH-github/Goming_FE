@@ -1,0 +1,22 @@
+/* input:text 일경우 사용해주세요 */
+.input-error {
+  /* border: 1px solid var(--error); */
+  outline: 1px solid var(--error);
+  align-items: flex-end;
+  width: 100%;
+  background-image: url("assets/images/icon_warning_filled.png");
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: 97% center;
+}
+.input-text {
+  height: 48px;
+  border: 1px solid var(--wgray04);
+  border-radius: 8px;
+  width: 100%;
+  color: var(--wgray12);
+}
+.input-text::placeholder { color: var(--wgray09); }
+.input-text:focus { outline: 1px solid var(--wgray06); }
+.input-error:focus {outline: 1px solid var(--error);}
+.color-error { color: var(--error); }

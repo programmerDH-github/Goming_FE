@@ -1,0 +1,60 @@
+/* 헤더 */
+.header {
+  width: 100%;
+  max-width: 480px;
+  height: 60px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #E9E7E2;
+  background-color: var(--wgray02);
+  z-index: 99;
+}
+
+/* 1. leftArrow & text */
+.header-istext{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.go-back-iconimg, .header-text{
+  padding-top: 16px;
+}
+.go-back-iconimg:hover{
+  cursor: pointer;
+}
+.go-back-iconimg img {
+  vertical-align: top;
+  margin-left: 16px;
+}
+
+/* 2. 로고만 */
+.header-logo-area{
+  margin-left: 16px;
+  margin-top: 18px;
+}
+.header-logo-area img{
+  
+}
+/** arrow custom header **/
+.login-header {
+  font-size: 18px;
+  justify-content: center;
+  vertical-align: middle;
+  line-height: 60px;
+  border-bottom: 1px solid #E9E7E2;
+}
+
+.header-text{
+  color: var(--wgary13);
+  flex: 1;
+}
+.header-text > p {
+  width: fit-content;
+  margin: 0 auto;
+  padding-left: 8px;
+  padding-right: 48px;
+  color: var(--wgray13);
+}
+
+

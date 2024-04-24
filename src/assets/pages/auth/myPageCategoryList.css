@@ -1,0 +1,84 @@
+.categorylist-wrap{
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex: 1;
+}
+.categorylist-top{
+  width: 100%;
+  max-width: 480px;
+  background-color: var(--wgray03);
+}
+.welcome-logout{
+  max-width: 480px;
+  margin-top: 48px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logout-btn {
+  margin-top: 34px;
+  max-width: 66px;
+}
+.logout-btn:hover{
+  cursor: pointer;
+}
+
+/* 카테고리목록 */
+.myinfo-category-area{
+  width: 100%;
+  flex: 1;
+  max-width: 480px;
+  top: 144px;
+  background-color: var(--wgray02);
+}
+
+.myinfo-email-area{
+  margin-top: 12px;
+  height: 16px;
+}
+
+.myinfo-email-area > p {
+  color: #96938C;
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: -0.025em;
+}
+
+.myinfo-category-btn{
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--wgray02);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #E9E7E2;
+  padding: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  vertical-align: middle;
+}
+.myinfo-category-btn:hover{
+  cursor: pointer;
+}
+.myinfo-category-btn:nth-of-type(1) {
+  border-top: 1px solid #E9E7E2;
+}
+.myinfo-category-btn span {
+  align-items: center;
+  letter-spacing: -0.025em;
+  color: #3D3938;
+  font-size: 14px;
+  line-height: 64px;
+  font-weight: 700;
+}
+.right-arrow-img{
+  display: block;
+  margin-top: 20px;
+}

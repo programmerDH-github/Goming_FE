@@ -1,0 +1,30 @@
+.tacompleted-wrap {
+  margin-top: 72px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info-img-wrap {
+  margin-bottom: 32px;
+}
+.info-text-wrap {
+  color: var(--wgray13);
+  margin-bottom: 48px;
+}
+
+.info-text-wrap p:first-of-type{
+  margin-bottom: 12px;
+}
+.info-text-wrap p:last-of-type{
+  color: var(--wgray10);
+}
+.info-btn-wrap button{
+  width: 100%;
+  height: 48px;
+  color: var(--wgray01);
+  background-color: var(--wgray12);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 8px;
+}

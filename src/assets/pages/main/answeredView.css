@@ -1,0 +1,18 @@
+.answered-view-wrap{
+  width: 100%;
+  min-height: 496px;
+  
+}
+.answered-view-inner-wrap{
+  min-height: 520px;
+  margin: 32px 16px 0 16px;
+  background-color: var(--wgray03);
+  border: 1px solid var(--wgray04);
+  border-radius: 8px;
+}
+.answered-view-item-a{
+  height: fit-content;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 24px;
+}

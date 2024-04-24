@@ -1,0 +1,90 @@
+.answer-wrap {
+  margin: 32px 16px 0 16px;
+}
+
+.question-wrap {
+  width: 100%;
+  height: 216px;
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F1ED;
+  border: 1px solid #E9E7E2;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.question-content{
+  height: 112px;
+  margin: 16px;
+  color: var(--wgray12);
+}
+
+/* 답변영역 */
+.answer-content{
+  width: 100%;
+  /* border: 1px solid #E9E7E2;
+  background: #F2F1ED;
+  height: 240px;
+  padding: 16px; */
+}
+.answer-content textarea {
+  width: 100%;
+}
+.answer-textarea {
+	height: 240px;
+	padding: 16px;
+	resize: none;
+	background-color: var(--wgray03);
+	margin-bottom: 8px;	
+  border:none;
+  outline: 1px solid var(--wgray04);
+  border-radius: 8px;
+	color: var(--wgray12);
+}
+.answer-textarea::placeholder {
+	color: var(--wgray09);
+}
+.answer-textarea:focus, .answer-textarea:active {
+	color: var(--wgray12);
+}
+/* 에러 및 글자수 문구 */
+.answer-comment-area{
+  display: flex;
+}
+.answer-text-count{
+  color: var(--wgray06);
+}
+.answer-error {
+  color: var(--error);
+}
+.answer-error-text{
+  flex: 1;
+}
+
+/* 버튼영역 */
+.answer-btn-area{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 48px;
+}
+.answer-btn-area button {
+  height: 48px;
+  width: 100%;
+  border-radius: 8px;
+}
+.answer-btn-confirm {
+  background-color: var(--wgray12);
+  color: var(--wgray01);
+}
+.answer-btn-cancel{
+  background-color: var(--wgray01);
+  color: var(--wgray12);
+  border: 1px solid var(--wgray12);
+}
+/* disabled */
+.answer-btn-area button:disabled { 
+  color: var(--wgray01);
+  background-color: var(--wgray06);
+  border: none;
+}

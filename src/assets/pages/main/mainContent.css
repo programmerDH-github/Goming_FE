@@ -1,0 +1,81 @@
+.main-content-area{
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.main-card-area{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 47.5% 47.5%;
+  grid-row: auto auto;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  perspective: 1000px;
+}
+
+/* card */
+.card {
+  box-sizing: border-box;
+  height: fit-content;
+  transform-style: preserve-3d;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid var(--wgray04);
+  background-color: #ffffff;
+} 
+.card img {
+}
+
+.card-front {
+  padding: 8px;
+}
+
+.card-in {
+  max-height: 192.8px;
+  display: flex;
+  justify-content: center;
+  background-color: #F8F3ED;
+  padding: 8px;
+}
+
+.card-scale {
+  background-color: #F8F3ED;
+}
+.card-scale:hover {
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes cardFade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.card-fade {
+  animation-name: cardFade;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate-reverse;
+  transition: 0.5s ease-in-out;
+  border-radius: 3px;
+}
+
+/* visability */
+.card-back {
+  display: none;
+}
+
+.card-title{
+  position: relative;
+  font-family: 'Prompt';
+  text-align: left;
+  color: var(--wgray09);
+  text-align: center;
+  padding: 13px 0 5px 0;
+}

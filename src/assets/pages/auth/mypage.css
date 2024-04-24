@@ -1,0 +1,12 @@
+.withdrawal-box {
+  cursor: pointer;
+}
+.withdrawal-box:hover {
+  font-weight: 800;
+}
+.wgary09 {
+  color: var(--wgray09);
+}
+.wgary12 {
+  color: var(--wgray12);
+}

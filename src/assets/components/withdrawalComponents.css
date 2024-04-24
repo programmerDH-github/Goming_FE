@@ -1,0 +1,148 @@
+.withdrawal-content {
+  margin-top: 32px;
+  color: var(--wgray12);
+}
+.color-wgray10{
+  color: var(--wgray10);
+}
+.color-wgray12 {
+  color: var(--wgray12);
+}
+.color-wgray06 {
+  color: var(--wgray06);
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+/* 첫번째 컨텐츠 (소제목) */
+.withdrawal-content-info{
+  margin-top: 16px;
+}
+/* 폰트사이즈 16 */
+.withdrawal-font-size-16 {
+  font-size: 16px;
+}
+/* 폰트사이즈 16 */
+.withdrawal-font-size-14 {
+  font-size: 14px;
+}
+/* 폰트사이즈 12 */
+.withdrawal-font-size-12 {
+  font-size: 12px;
+}
+/* 작은 회색 텍스트 */
+.withdrawal-small-info {
+  margin-top: 8px;
+  color: #7A7670;
+}
+/* 버튼 영역 */
+.withdrawal-button-area{
+  width: 100%;
+  height: 48px;
+  margin-top: 48px;
+  display: flex;
+  gap: 8px;
+}
+.withdrawal-button {
+  flex: 1;
+}
+.withdrawal-button:disabled{
+  border: none;
+  border-radius: 8px;
+  background-color: #C9C6C0
+;
+}
+.withdrawal-checkbox-wrap{
+  margin-top: 24px;
+}
+.withdrawal-checkbox-wrap div {
+  height: 20px;
+  margin-bottom: 16px;
+}
+.withdrawal-checkbox-wrap label {
+  vertical-align: top;
+  padding-left: 4px;
+}
+/* 체크박스 스타일 */
+.withdrawal-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #3D3938;
+  border-radius: 4px;
+  outline: none;
+  transition: 0.3s;
+}
+.withdrawal-checkbox:checked {/* 체크박스가 체크됐을 때의 색상 */
+  background-color: #3D3938;
+}
+
+.withdrawal-textarea-area {
+  height: 186px;
+  margin-bottom: 49px;
+}
+/* textarea */
+.withdrawal-textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  max-width: 480px;
+  resize: none;
+  padding: 16px;
+  border: none;
+  outline: 1px solid #E9E7E2;
+  border-radius: 8px;
+	color: var(--wgray12);
+}
+.withdrawal-textarea:focus {
+  color: var(--wgray12);
+  outline: 1px solid var(--wgray06);
+}
+
+.withdrawal-textarea:read-only {
+  color: var(--wgray09);
+  background: #F2F1ED;
+  outline: 1px solid var(--wgray04);
+  background-color: var(--wgray03);
+}
+/* textarea 에러 */
+.withdrawal-error-area{
+  height: 12px;
+  display: flex;
+  font-size: 10px;
+  justify-content: space-between;
+  line-height: 12px;
+  color: var(--wgray06);
+}
+.withdrawal-textarea-error {
+  border: 1px solid #EA4343;
+}
+.withdrawal-textarea-error::placeholder {
+  color: var(--wgray12);
+}
+.withdrawal-text-error {
+  font-size: 10px;
+  color: #EA4343; 
+}
+.word-break-keep-all{
+  word-break:keep-all;
+}
+.withdrawal-info{
+  height: fit-content;
+  display: flex;
+  vertical-align: middle;
+  padding: auto;
+}
+.withdrawal-info svg {
+  margin-right: 4px;
+  margin-bottom: 1px;
+}
+.withdrawal-info div {
+  height: 44px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0 auto;
+  line-height: 32px;
+}

@@ -1,0 +1,72 @@
+.alert-bg {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+.relative {
+  width: 100%;
+  max-width: 480px;
+  padding: 24px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.color-wgray12 {
+  color: var(--wgray12);
+}
+.color-wgray13 {
+  color: var(--wgray13);
+}
+button{
+  outline: none;
+}
+button:hover {
+  cursor: pointer;
+}
+.modal, .confirm-modal {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 16px;
+  padding: 40px 24px;
+  background-color: #FFFFFF;
+  color: var(--wgray12);
+}
+.modal h1, .confirm-modal>div {
+  color: var(--wgray13);
+}
+.modal-text-area > p{
+  text-align: center;
+}
+.modal-text-area > p:last-of-type {
+  padding-bottom: 32px;
+}
+
+.modal-btn-area > button{
+  width: 100%;
+}
+.modal-btn-area > button:hover {
+  cursor: pointer;
+}
+.d-none {
+  display: none;
+}
+/* confirm  */
+.confirm-btn-area{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.btns-isflex {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.confirm-btn-area > button{
+  width: 100%;
+}

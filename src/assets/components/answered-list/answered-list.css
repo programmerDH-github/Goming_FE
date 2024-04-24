@@ -1,0 +1,96 @@
+/* wrap */
+.answered-list-wrap{
+  max-width: 480px;
+}
+/* divider */
+.answered-list-divider{
+  background-color: var(--wgray04) ;
+  margin-bottom: 32px;
+  width: 100%;
+  max-width: 480px;
+  height: 8px;
+}
+.answered-list-item-count-wrap {
+  color: var(--wgray13);
+  margin-bottom: 12px;
+}
+.answered-list-count-text{
+  color: #6E8DBA;
+}
+/* lists-wrap */
+
+.answered-list-item {
+  max-width: 448px;
+  box-sizing: border-box;
+  background-color: var(--wgray01);
+  border: 1px solid var(--wgray04);
+  max-height: 296px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.answered-list-item:hover {
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.08));
+  cursor: pointer;
+}
+
+
+/* content */
+.answered-list-item-header-wrap{
+  margin-top: 24px;
+  margin-left: 16px;
+  display: flex;
+  width: fit-content;
+  gap: 4px;
+}
+.answered-list-item-date {
+  padding: 4px 8px;
+  background-color: var(--wgray02);
+  color: var(--wgray12);
+  border-radius: 4px;
+}
+.answered-list-item-q {
+  margin: 8px 16px;
+  color: var(--wgray13);
+}
+/* 글목록에서 질문 */
+.answered-list-item-q-1 { 
+  min-height: 26px;
+  max-height: 104px;
+}
+/* 상세페이지에서 질문 */
+.answered-list-item-q-2 { 
+  min-height: 28px;
+  max-height: 112px;
+}
+.answered-list-item-a {
+  min-height: 24px;
+  max-height: 122px; 
+  margin: 8px 16px 24px 16px;
+  display: -webkit-box;
+  white-space: nowrap;
+  word-break: break-all;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  white-space: normal;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  color: var(--wgray12);
+  
+}
+
+/* answer-list-labels-wrap */
+.answer-list-labels-wrap{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 12px;
+  margin-right: 25px;
+  gap: 8px;
+}
+.answer-list-labels{
+  display: flex;
+  gap: 4px;
+  color: var(--wgray10);
+}

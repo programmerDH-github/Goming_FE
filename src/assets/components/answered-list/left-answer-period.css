@@ -1,0 +1,38 @@
+.left-answer-period {
+  height: 44px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #EFA25A;
+  border-radius: 8px;
+}
+.left-answer-period > p {
+  margin-top: 10px;
+  margin-left: 20px;
+  color: var(--wgray01);
+
+}
+.left-answer-period-datearea{
+  display: flex;
+  gap: 4px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.left-answer-period-cover-white,.left-answer-period-text-white {
+  height: 24px;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: -0.025em;
+  text-align: center;
+}
+.left-answer-period-cover-white{
+  width: 24px;
+  color: #EFA25A;
+  background-color: var(--wgray01);
+  border-radius: 4px;
+}
+.left-answer-period-text-white{
+  color: var(--wgray01);
+}

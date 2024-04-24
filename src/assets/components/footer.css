@@ -1,0 +1,29 @@
+.footer-area{
+  margin-top: 160px;
+  width: 100%;
+  background-color: var(--wgray03);
+  padding-top: 40px;
+  color: var(--wgray12);
+}
+.inside-footer-area{
+  margin: 0 16px;
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+.mb-40 {
+  padding-bottom: 40px;
+}
+.footer-service-area{
+  display: flex;
+  gap: 12px;
+}
+.footer-service-area p:hover {
+  cursor: pointer;
+}
+.footer-service-area img{
+  padding-top: 2px;
+}
+.footer-title {
+  margin-bottom: 16px;
+}

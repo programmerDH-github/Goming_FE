@@ -1,0 +1,13 @@
+.todaydate-area{
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+.todaydate-name{
+  margin-top: 8px;
+}
+.today-name-blue{
+  color: #6E8DBA;
+}
+.today-name-info{
+  color: var(--wgray12);
+}

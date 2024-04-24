@@ -1,0 +1,137 @@
+.s-n-q-container {
+  position: absolute;
+  top:0;
+  left: 0;
+  width:100%;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #FAF9F6;
+}
+
+.s-n-q-inner-container {
+  width: 100%;
+}
+
+
+.s-n-q-inner-container > h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.s-n-q-inner-container > h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+
+/* 검색영역 */
+.s-n-q-search-info {
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.s-n-q-search-area {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  gap: 4px;
+  position: sticky;
+  top: 0;
+  background-color: #FAF9F6;
+  /* 아래에만 sticky 적용이 될 때 그림자 적용 */
+  box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2);
+}
+
+.s-n-q-search-area > select {
+  height: 40px;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.s-n-q-search-area > input {
+  flex: 1;
+  height: 40px;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.s-n-q-search-area button {
+  height: 40px;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* 목록영역 */
+.s-n-q-count {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.s-n-q-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.s-n-q-list-header {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.s-n-q-list-header tr {
+  width: 100%;
+  display: flex;
+  gap: 2px;
+}
+
+.s-n-q-list-item-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.s-n-q-list-item {
+  font-size: 0.7rem;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+  padding: 4px;
+  text-align: center;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+}
+
+.s-n-q-list-item:hover {
+  font-weight: bold;
+}
+.snq-item-edit-btn {
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+}
+.snq-item-edit-btn:hover {
+  cursor: pointer;
+  text-decoration: underline; 
+}

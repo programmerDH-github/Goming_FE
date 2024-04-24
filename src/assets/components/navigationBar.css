@@ -1,0 +1,33 @@
+.navbar-area{
+  width: 100%;
+  max-width: 480px;
+  height: 64px;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  z-index:2;
+  vertical-align: middle;
+  background-color: var(--wgray02);
+  border-top: 1px solid var(--wgray04);
+}
+@media (max-width: 480px){
+  .navbar-area {
+    width: 100%;
+  }
+}
+.navbar-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.navbar-item svg {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  align-items: center;
+}
+.navbar-item:hover {
+  cursor: pointer;
+}
