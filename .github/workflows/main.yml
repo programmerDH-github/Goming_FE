@@ -41,7 +41,7 @@ jobs:
          PRIVATE_KEY: ${{ secrets.AWS_SERVER_PRIVATE_KEY }}
          HOST: ${{ secrets.AWS_PUBLIC_IP }} 
          USERNAME: ${{ secrets.AWS_SERVER_USERNAME }}
-         PORT: 22
+         PORT: ${{ secrets.AWS_SERVER_PORT }}
          PASSWORD: ${{ secrets.AWS_SERVER_PASSWORD }}
       run: |
         echo "$PRIVATE_KEY" > private_key.pem
