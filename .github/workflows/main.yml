@@ -1,0 +1,51 @@
+name: React Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout main
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+      
+    - name: Cache node modules
+      uses: actions/cache@v3
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.OS }}-build-
+          ${{ runner.OS }}
+        
+    - name: Install Dependencies
+      run: npm install
+      
+    #Build : ./build 디렉토리에 폴더 생성
+    - name: Build
+      run: CI=false npm run build
+
+    #Deploy to server 
+    - name: Deploy to Server
+      env:
+         PRIVATE_KEY: ${{ secrets.AWS_SERVER_PRIVATE_KEY }}
+         HOST: ${{ secrets.AWS_PUBLIC_IP }} 
+         USERNAME: ${{ secrets.AWS_SERVER_USERNAME }}
+         PORT: 22
+         PASSWORD: ${{ secrets.AWS_SERVER_PASSWORD }}
+      run: |
+        echo "$PRIVATE_KEY" > private_key.pem
+        chmod 400 private_key.pem
+        scp -i private_key.pem -P $PORT -o StrictHostKeyChecking=no -r build/ $USERNAME@$HOST:/var/www/html/
+        ssh -i private_key.pem -p $PORT -o StrictHostKeyChecking=no $USERNAME@$HOST 'bash -s' <<- EOF
+        rm -f private_key.pem
