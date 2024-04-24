@@ -47,5 +47,5 @@ jobs:
         echo "$PRIVATE_KEY" > private_key.pem
         chmod 600 private_key.pem
         scp -i private_key.pem -o StrictHostKeyChecking=no -r build/ $USERNAME@$HOST:~/
-        ssh -i private_key.pem -o $PORT -o StrictHostKeyChecking=no $USERNAME@$HOST 'bash -s' <<- EOF
+        ssh -i private_key.pem -o StrictHostKeyChecking=no $USERNAME@$HOST 'bash -s' <<- EOF
         rm -f private_key.pem
