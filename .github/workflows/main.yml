@@ -45,7 +45,7 @@ jobs:
          PASSWORD: ${{ secrets.AWS_SERVER_PASSWORD }}
       run: |
         echo "$PRIVATE_KEY" > private_key.pem
-        chmod 400 private_key.pem
+        chmod 600 private_key.pem
         scp -i private_key.pem -P $PORT -o StrictHostKeyChecking=no -r build/ $USERNAME@$HOST:/var/www/html/
         ssh -i private_key.pem -p $PORT -o StrictHostKeyChecking=no $USERNAME@$HOST 'bash -s' <<- EOF
         rm -f private_key.pem
