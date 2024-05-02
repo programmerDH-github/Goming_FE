@@ -65,6 +65,6 @@
       "localhost:3000",
       "http://www.goming.site/"
     ],
-    "proxy": "https://localhost:8080/"
+    "proxy": "http://localhost:8080"
   }
 }
