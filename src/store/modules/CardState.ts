@@ -71,7 +71,7 @@ const useCardState = create<CARD_STORE>((persist as pillListPersist)
         const param = {email: ''}
         param.email = email ? email : 'system'  //로그인했을 경우 이메일, 아닐경우 빈값 전달
         // const today = getDateFormat01(new Date())
-        const response: AxiosResponse = await axios.get(`https://43.203.64.62:8080/api/question/unanswered/${param.email}`, {withCredentials: false})
+        const response: AxiosResponse = await axios.get(`${process.env.REACT_APP_API_URL}/api/question/unanswered/${param.email}`, {withCredentials: false})
         
         const leftAnswerCount = response?.data
 
