@@ -68,7 +68,7 @@ const AddNewQuiestion = () => {
           </tbody>
         </table>
         <p style={{width:'100%',textAlign:'right',fontSize:'10px'}}>
-          해당 페이지의 링크: <br/> <b>http://goming.site/new-question</b>
+          해당 페이지의 링크: <br/> <b>http://goming.life/new-question</b>
         </p>
         
         <div style={{width:'100%', maxWidth:'420px',display:'flex',gap:'12px',height:'40px',marginTop:'25px'}}>

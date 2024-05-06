@@ -63,7 +63,7 @@
   "options": {
     "allowedHosts": [
       "localhost:3000",
-      "http://www.goming.site/"
+      "http://www.goming.life/"
     ],
     "proxy": "http://localhost:8080"
   }
